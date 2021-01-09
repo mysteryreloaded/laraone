@@ -14,12 +14,7 @@
                 </div>
             </div>
         </el-popover>
-        <button
-            class="medium-editor-action"
-            :class="{'medium-editor-button-active': active}"
-            v-popover:colorpicker-popover
-            title="Text color"
-        >
+        <button v-popover:colorpicker-popover title="Text color">
             <i class="lo-icon lo-icon-tint" aria-hidden="true"></i>
         </button>
     </div>

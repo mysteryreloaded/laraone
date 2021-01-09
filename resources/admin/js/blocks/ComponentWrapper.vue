@@ -2,7 +2,7 @@
     <div :name="type + 'Component'" :class="containerClassList" ref="wrapper-container" :style="blockStyle">
         <div v-if="showHeaders" class="content-block-header -full">
             <i v-if="allowDraggable" class="lo-icon lo-icon-move" title="Reorder"></i>
-            <!-- <i v-if="blockType == 'normal'" class="lo-icon lo-icon-cog" title="Settings" name="openSettingsModal" @click="openSettingsModal"></i> -->
+            <i v-if="blockType == 'normal'" class="lo-icon lo-icon-cog" title="Settings" name="openSettingsModal" @click="openSettingsModal"></i>
             {{ settings.blockTitle }}
             <div class="pull-right">
                 <!-- <template v-if="topToolbar.includes('addComponents')">

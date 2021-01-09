@@ -5,12 +5,7 @@
             class="btn"
             :style="buttonStyles"
             name="button">
-            <vue-medium-editor
-                :text='blockContent'
-                :style="{'font-weight': settings.fontWeight}"
-                :custom-tag='settings.textTag'
-                :options="mediumEditorOptions"
-                v-on:edit='updateBlockContent' />
+            JustAButton
         </button>
     </div>
 </template>
@@ -19,25 +14,11 @@
     import GeneralMixin from '../../mixins/GeneralMixin'
     import { mapGetters, mapActions } from 'vuex'
 
-    import VueMediumEditor from '~/components/ui/vue-medium-editor-extended/medium-editor'
-
     export default {
-        components: {
-            VueMediumEditor
-        },
         mixins: [GeneralMixin],
         data() {
             return {
                 blockContent: this.$store.getters[`${this.storePath}/itemContent`](this.uniqueId) ? this.$store.getters[`${this.storePath}/itemContent`](this.uniqueId) : 'Button',
-
-                mediumEditorOptions: {
-                    toolbar: {buttons: []},
-                    buttonLabels: 'fontawesome',
-                    placeholder: {
-                        text: 'Button',
-                        hideOnClick: true
-                    },
-                }
             }
         },
         computed: {
@@ -84,13 +65,6 @@
 </script>
 
 <style lang="scss" scoped>
-    .medium-editor-element {
-        word-wrap: break-word;
-        min-height: 1em;
-        p {
-            margin: 0;
-        }
-    }
     button {
         > h1,
         > h2,
