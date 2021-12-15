@@ -2,6 +2,7 @@
 /storage/*.key
 /tests/*.database
 /vendor
+/public/laraone/*
 /.idea
 /tests/Browser/screenshots/*
 /tests/Browser/console/*
