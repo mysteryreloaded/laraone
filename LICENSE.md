@@ -1,5 +1,7 @@
 MIT License
 
+Copyright (c) 2021 ZetaSoft, Nenad Trifunovic
+
 Copyright (c) 2017-2020 Reimagined Works, Niko Craft
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
